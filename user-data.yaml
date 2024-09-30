@@ -1,0 +1,13 @@
+#cloud-config
+users:
+  - name: pragalbh
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    home: /home/pragalbh
+    lock_passwd: false
+    ssh_pwauth: true
+    chpasswd:
+      expire: true
+
+package_update: true
+package_upgrade: true
